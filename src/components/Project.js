@@ -42,7 +42,7 @@ const Project = () => {
                                     rel="noopener noreferrer"
                                 >{project.title}</a>
                         </h3>
-                        <div className='text-gray-500 text-xs space-x-4'>
+                        <div className='text-gray-500 text-xs space-x-6'>
                             <span>
                                 <strong className='font-bold'>Finished on</strong>:{" "}
                                 {
