@@ -9,7 +9,9 @@ const Home = () => {
                         <h1 className='text-sm text-red-100 font-bold cursive leading-none lg:leading-snug sm:home-name home-mobile'>
                             Ahee. I'm abel masingita.
                         </h1>
+                        
                     </section>
+                 
             </main>
     )
 }

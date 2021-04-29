@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <header style={{backgroundColor: "#FF0000"}}>
         <Container className="container">
-            <Navbar  collapseOnSelect expand="lg">
+            <Navbar  collapseOnSelect expand="lg" >
                 <LinkContainer 
                             activeClassName="text-white"
                             className="inflex-flex items-center py-6 px-3 mr-4 text-white hover:text-green-800 text-4xl font-bold cursive tracking-widest"
