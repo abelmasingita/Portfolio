@@ -24,17 +24,16 @@ const Project = () => {
     },[])
 
     return (
-        <main className='bg-gray-100 min-h-screen p-12'>
+        <main className='bg-gray-100 min-h-screen p-10'>
             <section className='container mx-auto'>
-                <h1 className='text-5xl flex justify-center cursive'>My projects</h1>
+                <h1 className='text-gray-800 text-5xl flex justify-center cursive'>My projects</h1>
                 <h2 className='text-lg text-gray-600 flex justify-center mb-12'>Welcome to my projects</h2>
                 <section className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
                     
-
                     {projectData && projectData.map((project,index) => (
 
-                        <article className='relative rounded-lg shadow-xl bg-white p-16'>
-                        <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
+                        <article className='relative rounded-lg shadow-xl bg-white p-4'>
+                        <h3 className='text-gray-800 text-3xl font-bold mb-2'>
                                 <a
                                     href={project.link}
                                     alt={project.title}
@@ -42,7 +41,7 @@ const Project = () => {
                                     rel="noopener noreferrer"
                                 >{project.title}</a>
                         </h3>
-                        <div className='text-gray-500 text-xs space-x-6'>
+                        <div className='text-gray-500 text-xs'>
                             <span>
                                 <strong className='font-bold'>Finished on</strong>:{" "}
                                 {
@@ -50,14 +49,14 @@ const Project = () => {
                                 }
                             </span>
                             <span>
-                                <stron className='font-bold'>Company</stron>:{" "}
+                                <strong className='font-bold'>Company</strong>:{" "}
                                 {project.place}
                             </span>
                             <span>
                                 <strong className='font-bold'>Type</strong>:{" "}
                                 {project.projectType}
                             </span>
-                            <p className='my-6 text-lg text-gray-700 leading-relaxed'>{project.description}</p>
+                            <p className='my-4 text-lg text-gray-700 leading-relaxed'>{project.description}</p>
                             <a   href={project.link}
                                  target="_blank"
                                  rel="noopener noreferrer"
