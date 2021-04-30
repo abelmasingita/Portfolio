@@ -6,7 +6,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 const NavBar = () => {
     return (
-        <header style={{backgroundColor: "#676b7f", filter: "blur(0.1px)"}} className="fixed-top">
+        <header style={{backgroundColor: "#676b7f", filter: "blur(0.1px)"}}>
         <Container className="container">
             <Navbar  collapseOnSelect expand="lg" >
                 <LinkContainer 
