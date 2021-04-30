@@ -5,7 +5,7 @@ import "../bootstrap.min.css"
 
 const Home = () => {
     return (
-            <main style={{backgroundColor: "#2664a1"}}>
+            <main style={{backgroundColor: "#3476B0"}}>
                     <img  src={image} alt="monstera-leaf" className="absolute object-cover w-100 h-100"/>
                     <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
                     <div className="banner-style lg:mt-80 ">
