@@ -33,7 +33,10 @@ const SinglePost = () => {
             .catch(console.error)
     },[slug])
 
-    if(!singlePost) return <div>Loading...</div>
+    if(!singlePost){
+
+        return <div>Loading...</div>
+    }
 
     return (
             <main className='bg-gray-200 min-h-screen p-12'>

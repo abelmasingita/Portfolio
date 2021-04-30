@@ -6,7 +6,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 const NavBar = () => {
     return (
-        <header style={{backgroundColor: "#FF0000"}}>
+        <header style={{backgroundColor: "#676b7f", filter: "blur(0.1px)"}}>
         <Container className="container">
             <Navbar  collapseOnSelect expand="lg" >
                 <LinkContainer 
@@ -19,17 +19,17 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <LinkContainer to="/post"
-                                        activeClassName="text-red-100 bg-red-700"
+                                        activeClassName="text-blue-300 bg-blue-300"
                                     className="inline-flex items-center py-3 px-3 my-6 rounded text-white">
                             <Nav.Link>Blog Posts</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/project"
-                             activeClassName="text-red-100 bg-red-700"
+                             activeClassName="text-blue-300 bg-blue-300"
                              className="inline-flex items-center py-3 px-3 my-6 rounded text-white">
                             <Nav.Link>projects</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/about" 
-                                activeClassName="text-red-100 bg-red-700"
+                               activeClassName="text-blue-300 bg-blue-300"
                                 className="inline-flex items-center py-3 px-3 my-6 rounded text-white">
                             <Nav.Link>About Me!</Nav.Link>
                         </LinkContainer>

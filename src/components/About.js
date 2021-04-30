@@ -31,27 +31,30 @@ const About = () => {
 
     if(!author) return <div>Loading...</div>
     return (
-            <main >
-                
-                 <h2 className='p-10 text-lg text-gray-600 flex justify-center mb-10'>Welcome to About me Section</h2>
-                <div className='p-4 lg:pt-15 container mx-auto relative'>
-                    <section className='bg-red-600 rounded-lg shadow-2xl lg:flex p-20'>
-                        <img  src={urlFor(author.authorImage).url()} 
-                                className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" 
+            <main >        
+                <h2 className='p-10 text-lg text-gray-600 flex justify-center'>Welcome to About me Section</h2>
+                <div className='p-4 lg:pt-15 container relative'>
+                    <section className='rounded-lg shadow-2xl lg:flex p-8'>
+                        <div className="card">
+                        <div className="row g-0">
+                            <div className="col-md-4">
+                            <img
+                                src={urlFor(author.authorImage).url()} 
                                 alt={author.name}
-                        />
-                        <div className="text-lg flex flex-col justify-center">
-                            <h1 className="cursive text-6xl text-green-300 mb-4">
-                                Hey there. I'm{" "}
-                                <span className="text-green-100">{author.name}</span>
-                            </h1>
-                            <div className="prose lg:prose-xl text-white">
-                                <BlockContent blocks={author.bio}  projectId="ajrhsyg8" dataset="production"/>
+                                className="img-fluid"
+                            />
                             </div>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h5 className="card-title">Hey there. i'm{" "}{author.name}</h5>
+                                    <BlockContent blocks={author.bio}  projectId="ajrhsyg8" dataset="production"/>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </section>
                 </div>
-                <h3 className='text-lg text-gray-600 flex justify-center mb-10'>Skill set</h3>
+                <h3 className='text-lg text-gray-600 flex justify-center mb-10'>Competitive Skills</h3>
                 <div className='p-4 lg:pt-48 container mx-auto relative'>
                  <HomeCarousel />
                 </div>                
