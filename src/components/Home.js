@@ -7,7 +7,6 @@ const Home = () => {
             <main>
                     <img  src={image} alt="monstera-leaf" className="absolute object-cover w-full h-full"/>
                     <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
-                    <div className="">
                     <div className="banner-style lg:mt-80 ">
                         <h3 className="ban-text lg:font-bold lg:text-6xl lg:text-red-100">I'm <span>Abel Masingita</span></h3>
                         <div className="content">
@@ -18,8 +17,7 @@ const Home = () => {
                             <span className="logo-tag"></span>
                         </h2>
                         </div>
-                    </div>
-                    </div>                    
+                    </div>                   
                     </section>            
             </main>
     )
