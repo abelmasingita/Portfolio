@@ -1,7 +1,7 @@
 import React from 'react'
 import image from  '../monstera-leaf.jpg'
 import './Footer.css'
-import "../bootstrap.min.css"
+//import "../bootstrap.min.css"
 
 const Home = () => {
     return (
